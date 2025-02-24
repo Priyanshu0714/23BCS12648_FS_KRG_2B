@@ -1,5 +1,5 @@
 {
     "title":"My Portfolio",
     "description":"My Portfolio is a dynamic and responsive website built using EJS, TailwindCSS, JavaScript, Node.js, Express.js, and MongoDB. It showcases my skills, projects, and experiences, featuring a clean UI, seamless navigation, and a 'Connect' section where visitors can send messages stored directly in the database.",
-    "link":""
+    "link":"priyanshu.works"
 }
