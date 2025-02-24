@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "CustomFont";
+    src: url("/images/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.glide {
+    width: 80%;
+    margin: auto;
+}
+.glide__slide img {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+  }

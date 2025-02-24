@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+</head>
+
+<body class="font-custom scrollbar-hide relative">
+    <!-- Hamburger Menu -->
+    <div id="hamburgerScroll"
+        class="absolute right-0 translate-x-full p-5 h-[100vh] w-full gap-6 border border-gray-600 bg-white z-50 opacity-0 pointer-events-none items-start justify-start flex-col transition-all duration-500 ease-in-out">
+        <!-- Close Button -->
+        <div id="closebutton" class="h-12 w-12 flex items-center justify-start p-1 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                <path fill="#000000"
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+            </svg>
+        </div>
+
+        <!-- About -->
+        <a id="aboutpart" class="flex items-center justify-start gap-2 hover:scale-105 w-full h-12">
+            <img class="h-[50%]" src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg" alt="(img)" />
+            <div class="h-14 text-xl flex items-center justify-center tracking-tighter">About
+            </div>
+        </a>
+
+        <!--Projects -->
+        <a id="projectpart" class="flex items-center justify-start gap-2 hover:scale-105 w-full h-12">
+            <img class="h-[50%]" src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg" alt="(img)" />
+            <div class="h-14 text-xl flex items-center justify-center tracking-tighter">Projects
+            </div>
+        </a>
+        <!-- Contact -->
+        <a href="mailto:choudhary.priyanshu1401@gmail.com" class="flex items-center justify-start gap-2 hover:scale-105 w-full h-12">
+            <img class="h-[50%]" src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg" alt="(img)" />
+            <div class="h-14 text-xl flex items-center justify-center tracking-tighter">
+                Contact
+            </div>
+        </a>
+        <!-- Resume -->
+        <a href="/pdfview" rel="noopener noreferrer" class="flex items-center justify-start gap-2 hover:scale-105 w-full h-12">
+            <img class="h-[50%]" src="https://cdn.hugeicons.com/icons/notebook-stroke-standard.svg" alt="(img)" />
+            <div class="h-14 text-xl flex items-center justify-center tracking-tighter">
+                Resume
+            </div>
+        </a>
+    </div>
+    <!-- this part is for the navigation bar -->
+    <div class="h-20 bg-black fixed w-screen flex items-center justify-between px-10 flex-row z-20 max-sm:px-5">
+        <!-- for the left part -->
+        <a href="/" class="text-white h-auto w-auto max-sm:text-sm">
+            < /> Priyanshu Choudhary
+        </a>
+        <!-- for the right part -->
+        <div class="space-x-2 font-xl text-white max-md:hidden">
+            <button id="about" class="outline-none border-none p-2">About</button>
+            <button id="Projects" class="outline-none border-none p-2">Projects</button>
+            <a href="mailto:choudhary.priyanshu1401@gmail.com" class="outline-none border-none p-2">
+                Contact
+            </a>
+            <a href="/pdfview" target="_blank" class="outline-none border-none p-2">Resume</a>
+        </div>
+        <!-- for the hamburger menu -->
+        <div id="hamburgermenu" class="hidden p-2 max-md:block">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </div>
+    </div>
+    <!-- this part is for the hero section -->
+    <div
+        class="w-full h-[600px] bg-[#f5f5f5] flex items-center justify-center flex-row max-md:h-[800px] max-sm:h-[600px] max-sm:py-2">
+        <!-- for the content part -->
+        <div
+            class="w-[75%] h-full flex flex-row max-xl:w-[90%] items-center justify-between max-md:flex-col max-sm:gap-10">
+            <div
+                class="w-1/2 h-full flex items-start gap-6 justify-center flex-col max-xl:w-2/3 max-md:w-full max-sm:gap-5 max-md:items-center  max-sm:justify-end max-sm:h-[500px]">
+                <div id="typewriter"
+                    class="h-10 text-4xl font-extrabold border-r-4 border-black w-auto max-lg:text-3xl max-sm:h-auto max-sm:text-center">
+                </div>
+                <div class="font-extrabold max-md:text-sm max-sm:text-center">
+                    I'm a 2nd year CSE student aspiring to be a web
+                    developer. I'm passionate about building modern and
+                    responsive web applications.
+                </div>
+                <div class="flex items-center justify-center flex-row gap-2">
+                    <a href="https://github.com/Priyanshu0714?tab=repositories" target="_blank"
+                        class="outline-none text-sm bg-black p-2 rounded-lg text-white">
+                        View Projects
+                    </a>
+                    <button id="contactme" class="outline-none text-sm bg-black p-2 rounded-lg text-white">Contact
+                        Me</button>
+                </div>
+            </div>
+            <!-- for the profile part -->
+            <div class="w-1/2 h-full flex items-center justify-end max-xl:w-auto max-sm:h-auto">
+                <img src="/images/profile_photo.jpeg" alt="Profile"
+                    class="rounded-full border border-gray-700 object-cover h-[300px] object-bottom w-[300px] p-1 max-sm:h-[250px] max-sm:w-[250px]" />
+            </div>
+        </div>
+    </div>
+    <!-- line -->
+    <div id="projectscroll" class="h-[1px] w-full bg-gray-300"></div>
+    <!-- this part is for the glide section -->
+    <div class="h-[600px] w-full flex items-center justify-center flex-col gap-5 py-5 max-md:h-[550px]">
+        <div class="text-4xl font-extrabold max-md:text-3xl">My Projects</div>
+        <div class="text-lg font-extrabold max-lg:text-center">Check out some of the projects I've worked on to showcase my web development
+            skills.</div>
+        <!-- for the glide js -->
+        <div class="glide glide-trending">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left"
+                    style="outline: 2px solid black; background-color: white;" data-glide-dir="<">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg"
+                            data-src="https://cdn.hugeicons.com/icons/arrow-left-01-solid-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#00195e">
+                            <path
+                                d="M15.8051 5.40705C15.4776 4.96235 14.8516 4.86736 14.4069 5.19488C14.0615 5.44927 13.7332 5.70372 13.4472 5.92689C12.8764 6.3724 12.1118 6.98572 11.3444 7.65208C10.5819 8.31412 9.79361 9.04815 9.18811 9.73344C8.88637 10.0749 8.60888 10.4279 8.4014 10.7721C8.21046 11.0888 8 11.524 8 12.0001C8 12.4762 8.21046 12.9115 8.4014 13.2282C8.60888 13.5724 8.88637 13.9253 9.18811 14.2668C9.79361 14.9521 10.5819 15.6861 11.3444 16.3482C12.1118 17.0145 12.8764 17.6278 13.4472 18.0734C13.7332 18.2965 14.0615 18.551 14.4069 18.8054C14.8516 19.1329 15.4776 19.0379 15.8051 18.5932C15.9368 18.4144 16.0002 18.2064 16 18.0002V12.0001V6.00007C16.0002 5.79387 15.9368 5.58581 15.8051 5.40705Z"
+                                fill="#00195e"></path>
+                        </svg>
+                    </div>
+                </button>
+                <button class="glide__arrow glide__arrow--right"
+                    style="outline: 2px solid black; background-color: white;" data-glide-dir=">">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg"
+                            data-src="https://cdn.hugeicons.com/icons/arrow-right-01-solid-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                            <path
+                                d="M8.19486 5.40705C8.52237 4.96235 9.14837 4.86736 9.59306 5.19488C9.93847 5.44927 10.2668 5.70372 10.5528 5.92689C11.1236 6.3724 11.8882 6.98573 12.6556 7.65208C13.4181 8.31412 14.2064 9.04815 14.8119 9.73344C15.1136 10.0749 15.3911 10.4279 15.5986 10.7721C15.7895 11.0888 16 11.524 16 12.0001C16 12.4762 15.7895 12.9115 15.5986 13.2282C15.3911 13.5724 15.1136 13.9253 14.8119 14.2668C14.2064 14.9521 13.4181 15.6861 12.6556 16.3482C11.8882 17.0145 11.1236 17.6278 10.5528 18.0734C10.2668 18.2965 9.93847 18.551 9.59307 18.8054C9.14837 19.1329 8.52237 19.0379 8.19486 18.5932C8.0632 18.4144 7.99983 18.2064 8.00001 18.0002L8 12.0001L8 6.00007C7.99983 5.79387 8.0632 5.58581 8.19486 5.40705Z"
+                                fill="#00195e"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- line -->
+    <div id="aboutmescroll" class="h-[1px] w-full bg-gray-300"></div>
+    <!-- this part is for the about me section -->
+    <div class="w-full h-[500px] bg-[#f5f5f5] flex items-center justify-center max-lg:h-[600px]">
+        <div class="h-full w-[80%] flex flex-row max-md:w-[90%]">
+            <div class="w-1/2 h-full flex items-start justify-center flex-col gap-6 max-md:w-full">
+                <div class="text-4xl font-extrabold max-sm:text-3xl">About Me</div>
+                <div class="tracking-tighter max-sm:text-sm">I'm a 2nd year Computer Science and Engineering student with a strong
+                    passion for web development. I've been learning and building projects with technologies like Nodejs,
+                    expressjs, javascript and mongoDB. I'm always eager to learn new skills and take on challenging
+                    projects.</div>
+                <div class="grid grid-cols-2 ">
+                    <!-- for the skills part -->
+                    <div class="flex flex-col gap-3">
+                        <div class="font-extrabold  text-xl">Skills</div>
+                        <ul class="tracking-tighter max-sm:text-sm ">
+                            <li>Html & Css</li>
+                            <li>JavaScript</li>
+                            <li>NodeJs & ExpressJs</li>
+                            <li>MongoDB</li>
+                            <li>Api integration</li>
+                            <li>C & C++</li>
+                            <li>Python</li>
+                            <li>DSA</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <!-- for the education part -->
+                    <div class="flex flex-col gap-3">
+                        <div class="font-extrabold  text-xl">Education</div>
+                        <ul class="tracking-tighter max-sm:text-sm">
+                            <li>Bachelor of Engineering(B.E)</li>
+                            <li>Computer Science and Engineering</li>
+                            <li>Chandigarh University</li>
+                            <li>2023-2027</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- for the image div -->
+            <div class="w-1/2 h-full flex items-center justify-center max-md:hidden">
+                <img class="object-cover h-full w-full" style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);"
+                    src="/images/background_coding.jpg" alt="coding image">
+            </div>
+        </div>
+    </div>
+    <!-- line -->
+    <div id="contactmescroll" class="h-[1px] w-full bg-gray-300"></div>
+    <!-- for the contact me part -->
+    <div class="w-full h-[450px] flex items-center justify-center">
+        <div class="w-1/2 h-full flex items-center justify-center flex-col overflow-scroll scrollbar-hide gap-5 max-xl:w-2/3 max-lg:w-[75%] max-md:w-[95%]">
+            <div class="text-3xl font-extrabold max-md:2xl">Get In Touch</div>
+            <div class="text-center tracking-tighter max-sm:text-sm">Feel free to reach out to me if you have any questions or would
+                like to discuss a potential project.</div>
+            <form class="flex-col gap-4 w-full flex items-center justify-center" action="/GetInTouch" method="get">
+                <input class="h-10 rounded-lg p-2 border border-gray-400 w-[50%] max-sm:w-[75%]" type="text" name="name"
+                    placeholder="Name" required>
+                <input class="h-10 rounded-lg p-2 border border-gray-400 w-[50%] max-sm:w-[75%]" type="email" name="email"
+                    placeholder="Email" required>
+                <textarea class="h-20 w-[50%] rounded-lg p-2 border border-gray-400 max-sm:w-[75%]" name="message"
+                    placeholder="Write your message..." required></textarea>
+                <button
+                    class="h-10 w-[50%] p-2 bg-black text-white rounded-lg flex flex-row gap-3 items-center justify-center max-sm:w-[75%]"
+                    type="submit">
+                    <div>Send</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- line -->
+    <div class="h-[1px] w-full bg-gray-300"></div>
+    <!-- for the footer part -->
+    <div class="w-full h-[50px] bg-[#f5f5f5] flex items-center justify-center tracking-tighter max-sm:text-[11px]">
+        © 2024 Priyanshu Choudhary. All rights reserved.
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+</body>
+
+</html>
