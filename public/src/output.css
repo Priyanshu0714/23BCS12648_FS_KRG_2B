@@ -1087,12 +1087,12 @@ video {
     width: 90%;
   }
 
-  .max-md\:w-full {
-    width: 100%;
-  }
-
   .max-md\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .max-md\:w-full {
+    width: 100%;
   }
 
   .max-md\:flex-col {
@@ -1170,12 +1170,12 @@ video {
     line-height: 2.25rem;
   }
 
+  .max-sm\:text-\[11px\] {
+    font-size: 11px;
+  }
+
   .max-sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .max-sm\:text-\[11px\] {
-    font-size: 11px;
   }
 }

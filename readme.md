@@ -1,14 +1,11 @@
 #  My Portfolio
 
-[Visit My Portfolio](https://myportfolio-5uu3.onrender.com)
+[Visit My Portfolio](www.priyanshu.works)
 
 ## Table of Contents
 
 - [Project Overview](#Project-Overview)
 - [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contact](#contact)
 
@@ -25,14 +22,11 @@ This is a personal portfolio website designed to showcase my skills, projects, a
 - **Dynamic Content:** Uses JavaScript to create an engaging user experience with smooth transitions)
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, Tailwind CSS, JavaScript
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Hosting:** Render
 
-
-# License
-This project is licensed under the MIT License – see the LICENSE file for details.
 
 # Contact
 Feel free to reach out to me through the contact form on the portfolio or connect with me at:
