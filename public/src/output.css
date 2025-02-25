@@ -831,26 +831,6 @@ video {
   border-color: rgb(75 85 99 / var(--tw-border-opacity, 1));
 }
 
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
-}
-
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity, 1));
-}
-
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
-}
-
-.border-purple-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(147 51 234 / var(--tw-border-opacity, 1));
-}
-
 .bg-\[\#f5f5f5\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
@@ -953,10 +933,6 @@ video {
   font-weight: 800;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
@@ -989,14 +965,6 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .transition-all {
@@ -1138,8 +1106,8 @@ video {
     height: 250px;
   }
 
-  .max-sm\:h-\[500px\] {
-    height: 500px;
+  .max-sm\:h-\[300px\] {
+    height: 300px;
   }
 
   .max-sm\:h-\[600px\] {
@@ -1150,10 +1118,6 @@ video {
     height: auto;
   }
 
-  .max-sm\:h-\[300px\] {
-    height: 300px;
-  }
-
   .max-sm\:w-\[250px\] {
     width: 250px;
   }
@@ -1162,20 +1126,12 @@ video {
     width: 75%;
   }
 
-  .max-sm\:w-\[\] {
-    width: ;
-  }
-
   .max-sm\:w-full {
     width: 100%;
   }
 
   .max-sm\:justify-end {
     justify-content: flex-end;
-  }
-
-  .max-sm\:gap-10 {
-    gap: 2.5rem;
   }
 
   .max-sm\:gap-5 {
@@ -1214,16 +1170,16 @@ video {
     line-height: 1.25rem;
   }
 
-  .max-sm\:font-normal {
-    font-weight: 400;
-  }
-
   .max-sm\:font-bold {
     font-weight: 700;
   }
 
   .max-sm\:font-medium {
     font-weight: 500;
+  }
+
+  .max-sm\:font-normal {
+    font-weight: 400;
   }
 
   .max-sm\:tracking-tight {
