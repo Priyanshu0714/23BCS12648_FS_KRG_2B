@@ -1,2 +1,4 @@
 node_modules/
 originalscript.js
+
+.DS_Store
