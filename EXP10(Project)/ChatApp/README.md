@@ -22,7 +22,7 @@ A real-time chat application built with Spring Boot, PostgreSQL, and Thymeleaf. 
 
 ## 🛠️ Setup Instructions
 # Clone the repo
-git clone (https://github.com/siddharthrai2024/chatapp-springboot).git
+git clone (https://github.com/Priyanshu0714/23BCS12648_FS_KRG_2B).git
 
 # Navigate to project
 cd chatapp-springboot
